@@ -12,6 +12,7 @@ import { SharedModule } from './shared/shared.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { AdminModule } from './modules/admin/admin.module';
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { AdminModule } from './modules/admin/admin.module';
     MatSliderModule,
     DefaultModule,
     SharedModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

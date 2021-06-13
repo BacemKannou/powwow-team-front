@@ -11,11 +11,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { AreaComponent } from './highCharts/area/area.component';
+import { HighchartsChartModule } from 'highcharts-angular';
 @NgModule({
   declarations: [    
     HeaderComponent,
     SidebarComponent,
-    FooterComponent],
+    FooterComponent,
+    AreaComponent],
   imports: [
     RouterModule,
     CommonModule,
@@ -25,12 +28,14 @@ import { RouterModule } from '@angular/router';
     MatButtonModule,
     FlexLayoutModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    HighchartsChartModule,
   ],
   exports:[
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AreaComponent
   ]
 })
 export class SharedModule { }
