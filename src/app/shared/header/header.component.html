@@ -23,8 +23,8 @@
                     <mat-icon>person_outline</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">
-                  <button mat-menu-item>Profile</button>
-                  <button mat-menu-item><mat-icon></mat-icon>Se déconnecter</button>
+                  <button mat-menu-item><mat-icon>account_circle</mat-icon>Profile</button>
+                  <button mat-menu-item (click)=logout()><mat-icon>logout</mat-icon>Se déconnecter</button>
                 </mat-menu>
             </li>    
         </ul>

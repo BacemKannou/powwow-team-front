@@ -20,7 +20,7 @@ import { MatDividerModule } from '@angular/material/divider';
     CommonModule,
     RouterModule,
     SharedModule,
-    MatDividerModule
+    MatDividerModule 
   ]
 })
 export class DefaultModule { }
